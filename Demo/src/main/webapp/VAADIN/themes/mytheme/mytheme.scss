@@ -1,0 +1,165 @@
+// If you edit this file you need to compile the theme. See README.md for details.
+
+// Global variable overrides. Must be declared before importing Valo.
+
+// Defines the plaintext font size, weight and family. Font size affects general component sizing.
+//$v-font-size: 16px;
+//$v-font-weight: 300;
+//$v-font-family: "Open Sans", sans-serif;
+
+// Defines the border used by all components.
+//$v-border: 1px solid (v-shade 0.7);
+//$v-border-radius: 4px;
+
+// Affects the color of some component elements, e.g Button, Panel title, etc
+//$v-background-color: hsl(210, 0%, 98%);
+// Affects the color of content areas, e.g  Panel and Window content, TextField input etc
+//$v-app-background-color: $v-background-color;
+
+// Affects the visual appearance of all components
+//$v-gradient: v-linear 8%;
+//$v-bevel-depth: 30%;
+//$v-shadow-opacity: 5%;
+
+// Defines colors for indicating status (focus, success, failure)
+//$v-focus-color: valo-focus-color(); // Calculates a suitable color automatically
+//$v-friendly-color: #2c9720;
+//$v-error-indicator-color: #ed473b;
+
+// For more information, see: https://vaadin.com/book/-/page/themes.valo.html
+// Example variants can be copy/pasted from https://vaadin.com/wiki/-/wiki/Main/Valo+Examples
+
+@import "../valo/valo.scss";
+
+@mixin mytheme {
+  @include valo;
+
+    /* White background for the entire UI */
+  .v-ui {
+    background:  white;
+  }
+
+  /* All labels have white text on black background */
+  .v-label {
+   /* background: white;
+    color: black;
+    border-color:black;
+    font-weight: bold;*/
+    font-size:15px;
+    left:130px;
+   /* padding: 5px;*/
+  }
+
+    
+  .v-panel {
+  /*text-align: center;
+  left:200px;
+  align:right;
+  margin: 100px;*/
+  border: 2px solid black;
+  margin-top:5px;
+  margin-bottom:5px;
+ /* background: white;
+  color:black;*/
+  
+  }
+  
+  
+  .v-button {
+ left:130px;
+ bottom:0px;
+ border: 2px solid black;
+}
+ .v-textfield{
+font-size : 20px;
+font-weight:bold;
+color: green;
+border-color:black;
+
+}
+
+.stylenm{
+   /* color: red;*/
+    border-color:black;
+    font-weight: bold;
+    text-align: left;
+}
+/*.v-checkbox{
+    border: 1px solid black;
+    font-weight: bold;
+    font-size:20px;
+    padding: 5px;
+    color: red;
+}*/
+ .layo{
+   border: 1px solid black;
+   margin-right: 30px;
+  /* margin-left:   30px;
+   margin-top:   20px;
+   margin-bottom:   20px;*/
+   
+ 
+ }
+ .mytheme{
+     //default margins for all layouts with margin enabled
+    /*.v-margin-left   {padding-left:   15px;}
+    .v-margin-right  {padding-right:  15px;}
+    .v-margin-top    {padding-top:    10px;}
+    .v-margin-bottom {padding-bottom: 10px;}*/
+      
+    //custom margins for layouts with specific css set and margin enabled
+    .custom-margins{
+        .v-margin-left   {padding-left:   250px;}
+        .v-margin-right  {padding-right:  250px;}
+        .v-margin-top    {padding-top:    100px;}
+        .v-margin-bottom {padding-bottom: 300px;}
+        
+        
+    }
+     border: 2px solid black; 
+}
+  .pnl{
+    /*margin-right:60px;*/
+    margin-top:50px;
+    margin-left:800px;
+  }
+  .pnl2{
+    margin-top:-300px;
+    /*padding-top:  20px*/
+    Margin-left:450px; 
+  }
+  .pnl3{
+  margin-left:800px;
+  }
+   .pnl4{
+    margin-top:-300px;
+    /*padding-top:  20px*/
+    Margin-left:450px; 
+   }
+   .mergeLayout{
+   border: 2px solid black;
+   /*margin-left:50px;
+   margin-right :2px;
+   margin-top:20px;
+   margin-bottom:10px;*/
+   }
+   .tbl{
+    margin-left:50px;
+    border: 2px solid black;
+   }
+   .tr{
+      left:150px;
+      /* margin-left:80px;*/
+          /* border: 2px solid black;*/
+       
+   
+   }
+   .mystyle {
+    font-family: fantasy;
+    font-style:  italic;
+    font-size:   25px;
+    font-weight: bolder;
+    line-height: 30px;
+}
+   
+}
